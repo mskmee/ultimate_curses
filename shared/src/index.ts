@@ -1,5 +1,28 @@
 export { AuthApiPath } from './bundles/auth/auth.js';
 export {
+  type UserCreateResponseDto,
+  type UserFindResponseDto,
+  type UserForgotPasswordRequestDto,
+  type UserForgotPasswordResponseDto,
+  userForgotPasswordValidationSchema,
+  type UserGetAllItemResponseDto,
+  type UserGetAllResponseDto,
+  type UserGetLMSDataById,
+  userPasswordValidationSchema,
+  type UserResetPasswordDto,
+  type UserResetPasswordRequestDto,
+  type UserResetPasswordResponseDto,
+  userResetPasswordValidationSchema,
+  UserRole,
+  UsersApiPath,
+  type UserSignInRequestDto,
+  type UserSignInResponseDto,
+  userSignInValidationSchema,
+  type UserSignUpRequestDto,
+  type UserSignUpResponseDto,
+  userSignUpValidationSchema,
+} from './bundles/users/users.js';
+export {
   ApiPath,
   AppEnvironment,
   ContentType,
