@@ -81,8 +81,6 @@ rules:
   import/newline-after-import:
     - error
     - count: 1
-  import/no-default-export:
-    - error
   '@typescript-eslint/consistent-type-definitions':
     - error
     - type
