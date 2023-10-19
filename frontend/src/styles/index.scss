@@ -1,0 +1,11 @@
+@import url("reset.scss");
+@import url("variables/global.scss");
+@import url("themes/light.scss");
+@import url("themes/dark.scss");
+
+.app {
+  min-height: 100vh;
+  color: var(--primary-color);
+  font: var(--font-m);
+  background: var(--bg-color);
+}
