@@ -1,10 +1,12 @@
-import { type FC, type PropsWithChildren, useMemo } from 'react';
-
 import { ThemeContext } from '~/shared/config/config.js';
 import { Theme } from '~/shared/enums/enums.js';
 import { LOCAL_STORAGE_THEME_KEY } from '~/shared/lib/constants/constants.js';
-import { useState } from '~/shared/lib/hooks/hooks.js';
-import { type ThemeType } from '~/shared/types/types.js';
+import { useMemo, useState } from '~/shared/lib/hooks/hooks.js';
+import {
+  type FC,
+  type PropsWithChildren,
+  type ThemeType,
+} from '~/shared/types/types.js';
 
 const ThemeProvider: FC<PropsWithChildren> = ({ children }) => {
   const storedTheme = (localStorage.getItem(LOCAL_STORAGE_THEME_KEY) ||
