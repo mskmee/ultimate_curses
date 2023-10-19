@@ -5,8 +5,9 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "NodeNext",
-    "esModuleInterop": true,
     "moduleResolution": "NodeNext",
+    "noEmit": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "jsx": "react-jsx",

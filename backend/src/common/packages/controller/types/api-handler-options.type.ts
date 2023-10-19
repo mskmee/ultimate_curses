@@ -1,4 +1,4 @@
-import { type ServerAppRouteParameters } from '~/common/server-application/server-application.js';
+import { type ServerAppRouteParameters } from '~/common/packages/server-application/server-application.js';
 
 type DefaultApiHandlerOptions = {
   body?: unknown;

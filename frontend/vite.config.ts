@@ -14,6 +14,7 @@ const config = ({ mode }: ConfigEnv): ReturnType<typeof defineConfig> => {
     build: {
       outDir: 'build',
     },
+    base: './',
     plugins: [tsconfigPathsPlugin(), reactPlugin()],
     server: {
       port: Number(VITE_APP_DEVELOPMENT_PORT),
