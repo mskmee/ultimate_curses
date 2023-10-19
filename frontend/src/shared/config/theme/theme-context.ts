@@ -1,7 +1,7 @@
 import { createContext } from 'react';
 
-import { Theme } from './enums/enums.js';
-import { type ThemeContextProperties } from './types/types.js';
+import { Theme } from '~/shared/enums/enums.js';
+import { type ThemeContextProperties } from '~/shared/types/types.js';
 
 const ThemeContext = createContext<ThemeContextProperties>({
   theme: Theme.LIGHT,

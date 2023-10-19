@@ -1,4 +1,4 @@
-import { type ThemeType } from './types.js';
+import { type ThemeType } from '../types.js';
 
 type ThemeContextProperties = {
   theme: ThemeType;
