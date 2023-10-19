@@ -1,4 +1,4 @@
-import { type FC, type PropsWithChildren } from 'react';
+import { type FC, type PropsWithChildren, useMemo } from 'react';
 import { useState } from 'react';
 
 import { LOCAL_STORAGE_THEME_KEY } from './constants/constants.js';
@@ -12,8 +12,10 @@ const ThemeProvider: FC<PropsWithChildren> = ({ children }) => {
 
   const [theme, setTheme] = useState(storedTheme);
 
+  const defaultProps = useMemo(() => ({ theme, setTheme }), [theme]);
+
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
+    <ThemeContext.Provider value={defaultProps}>
       {children}
     </ThemeContext.Provider>
   );
