@@ -1,13 +1,16 @@
+import './styles/index.scss';
+
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.js';
 import { BrowserRouter } from 'react-router-dom';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+import { Data } from './data.js';
+
+ReactDOM.createRoot(document.querySelector('#root') as HTMLElement).render(
   <React.StrictMode>
     <Suspense fallback={<h1>LOADING...</h1>}>
       <BrowserRouter>
-        <App />
+        <Data />
       </BrowserRouter>
     </Suspense>
   </React.StrictMode>,
