@@ -15,7 +15,7 @@ This is the repository responsible for Ultimate Curses apps.
 ## 🖍 Requirements
 
 - [NodeJS](https://nodejs.org/en/) (18.x.x);
-- [NPM](https://www.npmjs.com/) (9.x.x);
+- [NPM](https://www.npmjs.com/) (8.x.x);
 - [PostgreSQL](https://www.postgresql.org/) (15.2)
 - run **`npx simple-git-hooks`** at the root of the project, before the start (it will set the [pre-commit hook](https://www.npmjs.com/package/simple-git-hooks) for any commits).
 
