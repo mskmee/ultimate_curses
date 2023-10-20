@@ -1,0 +1,16 @@
+.nav_bar_container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: var(--nav-bar-height);
+  padding: 20px;
+  background-color: var(--inverted-bg-color);
+}
+
+.links_wrapper {
+  margin-left: auto;
+
+  a:first-child {
+    margin-right: 15px;
+  }
+}
