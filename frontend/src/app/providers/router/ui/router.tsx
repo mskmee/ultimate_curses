@@ -10,7 +10,11 @@ const Router: FC = () => {
     <Suspense fallback={<h1>LOADING...</h1>}>
       <Routes>
         {Object.values(routerConfig).map((route) => (
-          <Route key={route.path} {...route} />
+          <Route
+            key={route.path}
+            {...route}
+            element={<div className="page-wrapper">{route.element}</div>}
+          />
         ))}
       </Routes>
     </Suspense>

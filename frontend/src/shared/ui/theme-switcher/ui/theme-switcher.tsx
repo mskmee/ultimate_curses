@@ -19,7 +19,7 @@ const ThemeSwitcher: FC<ThemeSwitcherProperties> = ({ className }) => {
       className={classNames(styles.theme_switcher, className)}
       theme={ButtonThemes.CLEAR}
     >
-      {theme === Theme.DARK ? <LightIcon /> : <DarkIcon />}
+      {theme === Theme.DARK ? <DarkIcon /> : <LightIcon />}
     </Button>
   );
 };
