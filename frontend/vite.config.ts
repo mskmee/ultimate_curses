@@ -1,5 +1,6 @@
 import reactPlugin from '@vitejs/plugin-react';
 import { type ConfigEnv, defineConfig, loadEnv } from 'vite';
+import svgr from 'vite-plugin-svgr';
 import tsconfigPathsPlugin from 'vite-tsconfig-paths';
 
 const config = ({ mode }: ConfigEnv): ReturnType<typeof defineConfig> => {
@@ -15,7 +16,7 @@ const config = ({ mode }: ConfigEnv): ReturnType<typeof defineConfig> => {
       outDir: 'build',
     },
     base: './',
-    plugins: [tsconfigPathsPlugin(), reactPlugin()],
+    plugins: [tsconfigPathsPlugin(), reactPlugin(), svgr()],
     server: {
       port: Number(VITE_APP_DEVELOPMENT_PORT),
       proxy: {

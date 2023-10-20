@@ -1,9 +1,12 @@
+import {
+  ThemeContext,
+  type ThemeType,
+} from '~/shared/config/theme-config/theme-config.js';
 import { useMemo, useState } from '~/shared/lib/hooks/hooks.js';
 import { storage, StorageKey } from '~/shared/model/storage/storage.js';
 import { type FC, type PropsWithChildren } from '~/shared/types/types.js';
 
 import { getThemeFromBrowser } from '../lib/get-theme-from-browser.js';
-import { ThemeContext, type ThemeType } from '../model/model.js';
 
 const ThemeProvider: FC<PropsWithChildren> = ({ children }) => {
   const storedTheme =
