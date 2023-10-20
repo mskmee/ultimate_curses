@@ -1,9 +1,7 @@
-import { ThemeContext } from '~/shared/config/config.js';
-import { Theme } from '~/shared/enums/enums.js';
-import { LOCAL_STORAGE_THEME_KEY } from '~/shared/lib/constants/constants.js';
-import { type UseThemeResult } from '~/shared/types/types.js';
+import { useContext } from '~/shared/lib/hooks/hooks.js';
 
-import { useContext } from '../hooks.js';
+import { Theme, ThemeContext, type UseThemeResult } from '../model/model.js';
+import { LOCAL_STORAGE_THEME_KEY } from './constants.js';
 
 const useTheme = (): UseThemeResult => {
   const { setTheme, theme } = useContext(ThemeContext);

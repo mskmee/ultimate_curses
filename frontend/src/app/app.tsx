@@ -2,9 +2,9 @@ import './styles/index.scss';
 
 import { Link, Route, Routes } from 'react-router-dom';
 
+import { useTheme } from '~/app/providers/theme-provider/theme-provider.js';
 import { AboutPage, MainPage } from '~/pages/pages.js';
 import { classNames } from '~/shared/lib/helpers/helpers.js';
-import { useTheme } from '~/shared/lib/hooks/hooks.js';
 
 const App = (): JSX.Element => {
   const { handleToggleTheme, theme } = useTheme();
