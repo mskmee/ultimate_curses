@@ -17,16 +17,23 @@ const SideBar: FC<SideBarProperties> = ({ className }) => {
   }, []);
 
   return (
-    <div
+    <aside
       className={classNames(styles.side_bar, className, {
         [styles.collapsed]: isCollapsed,
       })}
     >
-      <button onClick={onToggle}>toggle</button>
+      <button
+        tabIndex={0}
+        aria-expanded={isCollapsed}
+        aria-label="Toggle Sidebar"
+        onClick={onToggle}
+      >
+        toggle
+      </button>
       <div className={styles.switchers}>
         <ThemeSwitcher />
       </div>
-    </div>
+    </aside>
   );
 };
 

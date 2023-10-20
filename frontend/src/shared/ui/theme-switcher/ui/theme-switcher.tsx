@@ -15,6 +15,7 @@ const ThemeSwitcher: FC<ThemeSwitcherProperties> = ({ className }) => {
   const { handleToggleTheme, theme } = useTheme();
   return (
     <Button
+      aria-label="Toggle Theme"
       onClick={handleToggleTheme}
       className={classNames(styles.theme_switcher, className)}
       theme={ButtonThemes.CLEAR}
